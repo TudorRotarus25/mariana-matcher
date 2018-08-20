@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     parseInput(input) {
-      return input.split(',').map((element) => {
+      return input.split(/ or |,/).map((element) => {
         return element.trim().toLowerCase();
       });
     },
